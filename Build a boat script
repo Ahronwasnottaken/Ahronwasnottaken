@@ -1,5 +1,3 @@
--------------------------- Loading --------------------------
-
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Loading 1% HUB";
 	Text = "...";
@@ -40,20 +38,10 @@ Duration = 16;
 
 wait(2)
 
--------------------------- Prints --------------------------
-
-print("Subcribe To ahron")
-print("Script Created By ahron_gaming20")
-print("Helper: Creator Of The Moster Script")
-print("Showcase By: Lordbedwars1991")
-print("Version Is: Beta")
-print("Found Bug?, Report To Reina RBX")
-print("Savety Lua Create By SuperGuardX")
-
 -------------------------- SendNotification --------------------------
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "Mega UI Loaded.";
+	Title = "Made By ahron_gaming20.";
 	Text = "Thanks For Using ";
 	Icon = "rbxthumb://type=Asset&id=15533743&w=150&h=150"})
 Duration = 16;
@@ -65,8 +53,8 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
-    Title = "Executor";
-    Text = "Kittenmilk - Level 7";
+    Title = "Build a boat";
+    Text = "ahron_gaming - Level 999";
     Icon = "rbxthumb://type=Asset&id=8260592968&w=150&h=150"})
 Duration = 16;
 
@@ -76,51 +64,614 @@ local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aika
 
 -------------------------- Local Windows --------------------------
 
-local w = library:CreateWindow("Mega UI Beta") -- Creates the window
+local w = library:CreateWindow("Build a boat") -- Creates the window
 
 -------------------------- Local Pages --------------------------
 
-local a = w:CreateFolder("Scripts") -- Creates the folder(U will put here your buttons,etc)
-local c = w:CreateFolder("Other GUI")
+local a = w:CreateFolder("Player") -- Creates the folder(U will put here your buttons,etc)
+local c = w:CreateFolder("Auto farm")
 
 -------------------------- Page A --------------------------
 
-a:Button("Keyboard",function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/kC3dAMvt"))();
+a:Button("Fly",function()
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Credits";
+                Text = "Modified By SpekzZ";
+                Duration = 3.5;
+            })
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local main = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local up = Instance.new("TextButton")
+local down = Instance.new("TextButton")
+local onof = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local plus = Instance.new("TextButton")
+local speed = Instance.new("TextLabel")
+local mine = Instance.new("TextButton")
+
+--Properties:
+
+main.Name = "main"
+main.Parent = game.CoreGui
+main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = main
+Frame.BackgroundColor3 = Color3.fromRGB(163, 255, 137)
+Frame.BorderColor3 = Color3.fromRGB(103, 221, 213)
+Frame.Position = UDim2.new(0.100320168, 0, 0.379746825, 0)
+Frame.Size = UDim2.new(0, 190, 0, 57)
+
+up.Name = "up"
+up.Parent = Frame
+up.BackgroundColor3 = Color3.fromRGB(79, 255, 152)
+up.Size = UDim2.new(0, 44, 0, 28)
+up.Font = Enum.Font.SourceSans
+up.Text = "UP"
+up.TextColor3 = Color3.fromRGB(0, 0, 0)
+up.TextSize = 14.000
+
+down.Name = "down"
+down.Parent = Frame
+down.BackgroundColor3 = Color3.fromRGB(215, 255, 121)
+down.Position = UDim2.new(0, 0, 0.491228074, 0)
+down.Size = UDim2.new(0, 44, 0, 28)
+down.Font = Enum.Font.SourceSans
+down.Text = "DOWN"
+down.TextColor3 = Color3.fromRGB(0, 0, 0)
+down.TextSize = 14.000
+
+onof.Name = "onof"
+onof.Parent = Frame
+onof.BackgroundColor3 = Color3.fromRGB(255, 249, 74)
+onof.Position = UDim2.new(0.702823281, 0, 0.491228074, 0)
+onof.Size = UDim2.new(0, 56, 0, 28)
+onof.Font = Enum.Font.SourceSans
+onof.Text = "fly"
+onof.TextColor3 = Color3.fromRGB(0, 0, 0)
+onof.TextSize = 14.000
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(242, 60, 255)
+TextLabel.Position = UDim2.new(0.469327301, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 100, 0, 28)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Fly Gui V2"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+plus.Name = "plus"
+plus.Parent = Frame
+plus.BackgroundColor3 = Color3.fromRGB(133, 145, 255)
+plus.Position = UDim2.new(0.231578946, 0, 0, 0)
+plus.Size = UDim2.new(0, 45, 0, 28)
+plus.Font = Enum.Font.SourceSans
+plus.Text = "+"
+plus.TextColor3 = Color3.fromRGB(0, 0, 0)
+plus.TextScaled = true
+plus.TextSize = 14.000
+plus.TextWrapped = true
+
+speed.Name = "speed"
+speed.Parent = Frame
+speed.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+speed.Position = UDim2.new(0.468421042, 0, 0.491228074, 0)
+speed.Size = UDim2.new(0, 44, 0, 28)
+speed.Font = Enum.Font.SourceSans
+speed.Text = "1"
+speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed.TextScaled = true
+speed.TextSize = 14.000
+speed.TextWrapped = true
+
+mine.Name = "mine"
+mine.Parent = Frame
+mine.BackgroundColor3 = Color3.fromRGB(123, 255, 247)
+mine.Position = UDim2.new(0.231578946, 0, 0.491228074, 0)
+mine.Size = UDim2.new(0, 45, 0, 29)
+mine.Font = Enum.Font.SourceSans
+mine.Text = "-"
+mine.TextColor3 = Color3.fromRGB(0, 0, 0)
+mine.TextScaled = true
+mine.TextSize = 14.000
+mine.TextWrapped = true
+
+speeds = 1
+
+local speaker = game:GetService("Players").LocalPlayer
+
+local chr = game.Players.LocalPlayer.Character
+local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+
+nowe = false
+
+Frame.Active = true -- main = gui
+Frame.Draggable = true
+
+onof.MouseButton1Down:connect(function()
+
+	if nowe == true then
+		nowe = false
+
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,true)
+		speaker.Character.Humanoid:ChangeState(Enum.HumanoidStateType.RunningNoPhysics)
+	else 
+		nowe = true
+
+
+
+		for i = 1, speeds do
+			spawn(function()
+
+				local hb = game:GetService("RunService").Heartbeat	
+
+
+				tpwalking = true
+				local chr = game.Players.LocalPlayer.Character
+				local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+				while tpwalking and hb:Wait() and chr and hum and hum.Parent do
+					if hum.MoveDirection.Magnitude > 0 then
+						chr:TranslateBy(hum.MoveDirection)
+					end
+				end
+
+			end)
+		end
+		game.Players.LocalPlayer.Character.Animate.Disabled = true
+		local Char = game.Players.LocalPlayer.Character
+		local Hum = Char:FindFirstChildOfClass("Humanoid") or Char:FindFirstChildOfClass("AnimationController")
+
+		for i,v in next, Hum:GetPlayingAnimationTracks() do
+			v:AdjustSpeed(0)
+		end
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,false)
+		speaker.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+	end
+
+
+
+
+	
+		local plr = game.Players.LocalPlayer
+		local UpperTorso = plr.Character.LowerTorso
+		local flying = true
+		local deb = true
+		local ctrl = {f = 0, b = 0, l = 0, r = 0}
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+		local maxspeed = 50
+		local speed = 0
+
+
+		local bg = Instance.new("BodyGyro", UpperTorso)
+		bg.P = 9e4
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+		bg.cframe = UpperTorso.CFrame
+		local bv = Instance.new("BodyVelocity", UpperTorso)
+		bv.velocity = Vector3.new(0,0.1,0)
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+		if nowe == true then
+			plr.Character.Humanoid.PlatformStand = true
+		end
+		while nowe == true or game:GetService("Players").LocalPlayer.Character.Humanoid.Health == 0 do
+			wait()
+
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+				speed = speed+.5+(speed/maxspeed)
+				if speed > maxspeed then
+					speed = maxspeed
+				end
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+				speed = speed-1
+				if speed < 0 then
+					speed = 0
+				end
+			end
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+			else
+				bv.velocity = Vector3.new(0,0,0)
+			end
+
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+		end
+		ctrl = {f = 0, b = 0, l = 0, r = 0}
+		lastctrl = {f = 0, b = 0, l = 0, r = 0}
+		speed = 0
+		bg:Destroy()
+		bv:Destroy()
+		plr.Character.Humanoid.PlatformStand = false
+		game.Players.LocalPlayer.Character.Animate.Disabled = false
+		tpwalking = false
+
+
+
+	
+
+
+
+
+
 end)
 
-a:Button("Infinite yield",function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))();
+
+up.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,2,0)
+	
 end)
 
-a:Button("Chat Troll",function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Chat-troll-for-Android/main/Protected%20(8).lua'),true))();
+
+down.MouseButton1Down:connect(function()
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-2,0)
 
 end)
 
-a:Button("ESP",function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/vozoid/releases/main/viewport-chams"))();
+
+game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function(char)
+	wait(0.7)
+	game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+	game.Players.LocalPlayer.Character.Animate.Disabled = false
 
 end)
 
-a:Button("Thor(notfe)",function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/mLHJuU9Y",true))();
+
+plus.MouseButton1Down:connect(function()
+	speeds = speeds + 1
+	speed.Text = speeds
+	if nowe == true then
+		
+
+	tpwalking = false
+	for i = 1, speeds do
+		spawn(function()
+
+			local hb = game:GetService("RunService").Heartbeat	
+
+
+			tpwalking = true
+			local chr = game.Players.LocalPlayer.Character
+			local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+			while tpwalking and hb:Wait() and chr and hum and hum.Parent do
+				if hum.MoveDirection.Magnitude > 0 then
+					chr:TranslateBy(hum.MoveDirection)
+				end
+			end
+
+		end)
+		end
+		end
+end)
+mine.MouseButton1Down:connect(function()
+	if speeds == 1 then
+		speed.Text = 'can not be less than 1'
+		wait(1)
+		speed.Text = speeds
+	else
+	speeds = speeds - 1
+		speed.Text = speeds
+		if nowe == true then
+	tpwalking = false
+	for i = 1, speeds do
+		spawn(function()
+
+			local hb = game:GetService("RunService").Heartbeat	
+
+
+			tpwalking = true
+			local chr = game.Players.LocalPlayer.Character
+			local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+			while tpwalking and hb:Wait() and chr and hum and hum.Parent do
+				if hum.MoveDirection.Magnitude > 0 then
+					chr:TranslateBy(hum.MoveDirection)
+				end
+			end
+
+		end)
+		end
+		end
+		end
+end);
+end)
+
+a:Button("Infi jump",function()
+	local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end);
+end)
+
+a:Button("Esp",function()
+	-- press v to use aimbot and press q to disable aimbot
+loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY", true))()
+
+PLAYER  = game.Players.LocalPlayer
+MOUSE   = PLAYER:GetMouse()
+CC      = game.Workspace.CurrentCamera
+
+ENABLED      = false
+ESP_ENABLED  = false
+
+_G.FREE_FOR_ALL = false
+
+_G.BIND        = 118
+_G.ESP_BIND    = 49
+_G.CHANGE_AIM  = 'q'
+
+_G.AIM_AT = 'Head'
+
+wait(1)
+
+function GetNearestPlayerToMouse()
+local PLAYERS      = {}
+local PLAYER_HOLD  = {}
+local DISTANCES    = {}
+for i, v in pairs(game.Players:GetPlayers()) do
+if v ~= PLAYER then
+table.insert(PLAYERS, v)
+end
+end
+for i, v in pairs(PLAYERS) do
+if _G.FREE_FOR_ALL == false then
+if v and (v.Character) ~= nil and v.TeamColor ~= PLAYER.TeamColor then
+local AIM = v.Character:FindFirstChild(_G.AIM_AT)
+if AIM ~= nil then
+local DISTANCE                 = (AIM.Position - game.Workspace.CurrentCamera.CoordinateFrame.p).magnitude
+local RAY                      = Ray.new(game.Workspace.CurrentCamera.CoordinateFrame.p, (MOUSE.Hit.p - CC.CoordinateFrame.p).unit * DISTANCE)
+local HIT,POS                  = game.Workspace:FindPartOnRay(RAY, game.Workspace)
+local DIFF                     = math.floor((POS - AIM.Position).magnitude)
+PLAYER_HOLD[v.Name .. i]       = {}
+PLAYER_HOLD[v.Name .. i].dist  = DISTANCE
+PLAYER_HOLD[v.Name .. i].plr   = v
+PLAYER_HOLD[v.Name .. i].diff  = DIFF
+table.insert(DISTANCES, DIFF)
+end
+end
+elseif _G.FREE_FOR_ALL == true then
+local AIM = v.Character:FindFirstChild(_G.AIM_AT)
+if AIM ~= nil then
+local DISTANCE                 = (AIM.Position - game.Workspace.CurrentCamera.CoordinateFrame.p).magnitude
+local RAY                      = Ray.new(game.Workspace.CurrentCamera.CoordinateFrame.p, (MOUSE.Hit.p - CC.CoordinateFrame.p).unit * DISTANCE)
+local HIT,POS                  = game.Workspace:FindPartOnRay(RAY, game.Workspace)
+local DIFF                     = math.floor((POS - AIM.Position).magnitude)
+PLAYER_HOLD[v.Name .. i]       = {}
+PLAYER_HOLD[v.Name .. i].dist  = DISTANCE
+PLAYER_HOLD[v.Name .. i].plr   = v
+PLAYER_HOLD[v.Name .. i].diff  = DIFF
+table.insert(DISTANCES, DIFF)
+end
+end
+end
+
+if unpack(DISTANCES) == nil then
+return false
+end
+
+local L_DISTANCE = math.floor(math.min(unpack(DISTANCES)))
+if L_DISTANCE > 20 then
+return false
+end
+
+for i, v in pairs(PLAYER_HOLD) do
+if v.diff == L_DISTANCE then
+return v.plr
+end
+end
+return false
+end
+
+GUI_MAIN                           = Instance.new('ScreenGui', game.CoreGui)
+GUI_TARGET                         = Instance.new('TextLabel', GUI_MAIN)
+GUI_AIM_AT                         = Instance.new('TextLabel', GUI_MAIN)
+
+GUI_MAIN.Name                      = 'AIMBOT'
+
+GUI_TARGET.Size                    = UDim2.new(0,200,0,30)
+GUI_TARGET.BackgroundTransparency  = 0.5
+GUI_TARGET.BackgroundColor         = BrickColor.new('Fossil')
+GUI_TARGET.BorderSizePixel         = 0
+GUI_TARGET.Position                = UDim2.new(0.5,-100,0,0)
+GUI_TARGET.Text                    = 'AIMBOT : OFF'
+GUI_TARGET.TextColor3              = Color3.new(1,1,1)
+GUI_TARGET.TextStrokeTransparency  = 1
+GUI_TARGET.TextWrapped             = true
+GUI_TARGET.FontSize                = 'Size24'
+GUI_TARGET.Font                    = 'SourceSansBold'
+
+GUI_AIM_AT.Size                    = UDim2.new(0,200,0,20)
+GUI_AIM_AT.BackgroundTransparency  = 0.5
+GUI_AIM_AT.BackgroundColor         = BrickColor.new('Fossil')
+GUI_AIM_AT.BorderSizePixel         = 0
+GUI_AIM_AT.Position                = UDim2.new(0.5,-100,0,30)
+GUI_AIM_AT.Text                    = 'AIMING : HEAD'
+GUI_AIM_AT.TextColor3              = Color3.new(1,1,1)
+GUI_AIM_AT.TextStrokeTransparency  = 1
+GUI_AIM_AT.TextWrapped             = true
+GUI_AIM_AT.FontSize                = 'Size18'
+GUI_AIM_AT.Font                    = 'SourceSansBold'
+
+local TRACK = false
+
+function CREATE(BASE, TEAM)
+local ESP_MAIN                   = Instance.new('BillboardGui', PLAYER.PlayerGui)
+local ESP_DOT                    = Instance.new('Frame', ESP_MAIN)
+local ESP_NAME                   = Instance.new('TextLabel', ESP_MAIN)
+
+ESP_MAIN.Name                    = 'ESP'
+ESP_MAIN.Adornee                 = BASE
+ESP_MAIN.AlwaysOnTop             = true
+ESP_MAIN.ExtentsOffset           = Vector3.new(0, 1, 0)
+ESP_MAIN.Size                    = UDim2.new(0, 5, 0, 5)
+
+ESP_DOT.Name                     = 'DOT'
+ESP_DOT.BackgroundColor          = BrickColor.new('Bright red')
+ESP_DOT.BackgroundTransparency   = 0.3
+ESP_DOT.BorderSizePixel          = 0
+ESP_DOT.Position                 = UDim2.new(-0.5, 0, -0.5, 0)
+ESP_DOT.Size                     = UDim2.new(2, 0, 2, 0)
+ESP_DOT.Visible                  = true
+ESP_DOT.ZIndex                   = 10
+
+ESP_NAME.Name                    = 'NAME'
+ESP_NAME.BackgroundColor3        = Color3.new(255, 255, 255)
+ESP_NAME.BackgroundTransparency  = 1
+ESP_NAME.BorderSizePixel         = 0
+ESP_NAME.Position                = UDim2.new(0, 0, 0, -40)
+ESP_NAME.Size                    = UDim2.new(1, 0, 10, 0)
+ESP_NAME.Visible                 = true
+ESP_NAME.ZIndex                  = 10
+ESP_NAME.Font                    = 'ArialBold'
+ESP_NAME.FontSize                = 'Size14'
+ESP_NAME.Text                    = BASE.Parent.Name:upper()
+ESP_NAME.TextColor               = BrickColor.new('Bright red')
+end
+
+function CLEAR()
+for _,v in pairs(PLAYER.PlayerGui:children()) do
+if v.Name == 'ESP' and v:IsA('BillboardGui') then
+v:Destroy()
+end
+end
+end
+
+function FIND()
+CLEAR()
+TRACK = true
+spawn(function()
+while wait() do
+if TRACK then
+CLEAR()
+for i,v in pairs(game.Players:GetChildren()) do
+if v.Character and v.Character:FindFirstChild('Head') then
+if _G.FREE_FOR_ALL == false then
+if v.TeamColor ~= PLAYER.TeamColor then
+if v.Character:FindFirstChild('Head') then
+CREATE(v.Character.Head, true)
+end
+end
+else
+if v.Character:FindFirstChild('Head') then
+CREATE(v.Character.Head, true)
+end
+end
+end
+end
+end
+end
+wait(1)
+end)
+end
+
+MOUSE.KeyDown:connect(function(KEY)
+KEY = KEY:lower():byte()
+if KEY == _G.BIND then
+ENABLED = true
+end
+end)
+
+MOUSE.KeyUp:connect(function(KEY)
+KEY = KEY:lower():byte()
+if KEY == _G.BIND then
+ENABLED = false
+end
+end)
+
+MOUSE.KeyDown:connect(function(KEY)
+KEY = KEY:lower():byte()
+if KEY == _G.ESP_BIND then
+if ESP_ENABLED == false then
+FIND()
+ESP_ENABLED = true
+print('ESP : ON')
+elseif ESP_ENABLED == true then
+wait()
+CLEAR()
+TRACK = false
+ESP_ENABLED = true
+print('ESP : OFF')
+end
+end
+end)
+
+MOUSE.KeyDown:connect(function(KEY)
+if KEY == _G.CHANGE_AIM then
+if _G.AIM_AT == 'Head' then
+_G.AIM_AT = 'Torso'
+GUI_AIM_AT.Text = 'AIMING : TORSO'
+elseif _G.AIM_AT == 'Torso' then
+_G.AIM_AT = 'Head'
+GUI_AIM_AT.Text = 'AIMING : HEAD'
+end
+end
+end)
+
+game:GetService('RunService').RenderStepped:connect(function()
+if ENABLED then
+local TARGET = GetNearestPlayerToMouse()
+if (TARGET ~= false) then
+local AIM = TARGET.Character:FindFirstChild(_G.AIM_AT)
+if AIM then
+CC.CoordinateFrame = CFrame.new(CC.CoordinateFrame.p, AIM.CFrame.p)
+end
+GUI_TARGET.Text = 'AIMBOT : '.. TARGET.Name:sub(1, 5)
+else
+GUI_TARGET.Text = 'AIMBOT : OFF'
+end
+end
+end)
+
+repeat
+wait()
+if ESP_ENABLED == true then
+FIND()
+end
+until ESP_ENABLED == false
+wait()
+_G.FREE_FOR_ALL = false
+_G.BIND = 118 -- LEFT ALT
+_G.ESP_BIND = 49 -- RIGHT CTRL;
 end)
 
 -------------------------- Page C --------------------------
 
-c:Button("VHUB",function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyaboivincentt5315/script/main/VHub.txt'),true))();
+c:Button("auto farm gold",function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/BoaHacker/ROBLOX/main/cheat', true))();
 end)
-
-c:Button("BKHAX",function()
-	loadstring(game:HttpGet("https://paste.ee/r/bf5oO", true))()
-end)
-
-c:Button("Troll gui",function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Henry887/RemX-Script-Hub/main/main.lua'),true))()
-end)
-
-c:DestroyGui()
-
---------------------------  Coming Soon --------------------------
