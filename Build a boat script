@@ -1,0 +1,126 @@
+-------------------------- Loading --------------------------
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Loading 1% HUB";
+	Text = "...";
+	Icon = "rbxthumb://type=Asset&id=1683451805&w=150&h=150"})
+Duration = 16;
+
+wait(7)
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Loading 5% HUB";
+	Text = "...";
+	Icon = "rbxthumb://type=Asset&id=1683451805&w=150&h=150"})
+Duration = 16;
+
+wait(6)
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Loading 10% HUB";
+	Text = "...";
+	Icon = "rbxthumb://type=Asset&id=1683451805&w=150&h=150"})
+Duration = 16;
+
+wait(5)
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Loading 50% HUB";
+	Text = "...";
+	Icon = "rbxthumb://type=Asset&id=1683451805&w=150&h=150"})
+Duration = 16;
+
+wait(4)
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Loading 100% HUB";
+	Text = "...";
+	Icon = "rbxthumb://type=Asset&id=1683451805&w=150&h=150"})
+Duration = 16;
+
+wait(2)
+
+-------------------------- Prints --------------------------
+
+print("Subcribe To ahron")
+print("Script Created By ahron_gaming20")
+print("Helper: Creator Of The Moster Script")
+print("Showcase By: Lordbedwars1991")
+print("Version Is: Beta")
+print("Found Bug?, Report To Reina RBX")
+print("Savety Lua Create By SuperGuardX")
+
+-------------------------- SendNotification --------------------------
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Mega UI Loaded.";
+	Text = "Thanks For Using ";
+	Icon = "rbxthumb://type=Asset&id=15533743&w=150&h=150"})
+Duration = 16;
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Bugs";
+	Text = "(If The Gui Is Not Working Spam The Button)";
+	Icon = "rbxthumb://type=Asset&id=5839962783&w=150&h=150"})
+Duration = 16;
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "Executor";
+    Text = "Kittenmilk - Level 7";
+    Icon = "rbxthumb://type=Asset&id=8260592968&w=150&h=150"})
+Duration = 16;
+
+-------------------------- Material --------------------------
+
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+-------------------------- Local Windows --------------------------
+
+local w = library:CreateWindow("Mega UI Beta") -- Creates the window
+
+-------------------------- Local Pages --------------------------
+
+local a = w:CreateFolder("Scripts") -- Creates the folder(U will put here your buttons,etc)
+local c = w:CreateFolder("Other GUI")
+
+-------------------------- Page A --------------------------
+
+a:Button("Keyboard",function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/kC3dAMvt"))();
+end)
+
+a:Button("Infinite yield",function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))();
+end)
+
+a:Button("Chat Troll",function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Chat-troll-for-Android/main/Protected%20(8).lua'),true))();
+
+end)
+
+a:Button("ESP",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/vozoid/releases/main/viewport-chams"))();
+
+end)
+
+a:Button("Thor(notfe)",function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/mLHJuU9Y",true))();
+end)
+
+-------------------------- Page C --------------------------
+
+c:Button("VHUB",function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyaboivincentt5315/script/main/VHub.txt'),true))();
+end)
+
+c:Button("BKHAX",function()
+	loadstring(game:HttpGet("https://paste.ee/r/bf5oO", true))()
+end)
+
+c:Button("Troll gui",function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Henry887/RemX-Script-Hub/main/main.lua'),true))()
+end)
+
+c:DestroyGui()
+
+--------------------------  Coming Soon --------------------------
