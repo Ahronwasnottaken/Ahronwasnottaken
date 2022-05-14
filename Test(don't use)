@@ -1,0 +1,47 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Test", "Ocean")
+Section:NewKeybind("Close Tab open Tab", "Close Tab open Tab", Enum.KeyCode.Tab, function()
+    Library:ToggleUI()
+end)
+
+--Tab
+
+local Tab1 = Window:NewTab("Home")
+local Tab2 = Window:NewTab("Pet Simulator x")
+local Tab3 = Window:NewTab("Arsenal")
+local Tab4 = Window:NewTab("Dahood")
+
+--section inside tabs
+
+local Tab1Section = Tab:NewSection("Home")
+local Tab2Section = Tab:NewSection("Pet Simulator x")
+local Tab3Section = Tab:NewSection("Arsenal")
+local Tab4Section = Tab:NewSection("Dahood")
+
+--Button
+
+Tab1Section:NewButton("Made By Ahron", "Made By Ahron", function()
+    print("Clicked")
+end)
+
+Tab1Section:NewButton("Thanks For Using", "Thanks For Using", function()
+    print("Clicked")
+end)
+
+--Tab2
+
+Tab2Section:NewButton("SAZA HUB", "SAZA HUB", function()
+    https://scriptblox.com/raw/SAZA-HUB_496
+end)
+
+--Tab3
+
+Tab3Section:NewButton("Arsenal Very Op Script", "Arsenal Very Op Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+--Tab4
+
+Tab4Section:NewButton("Dahood", "Dahood", function()
+    https://raw.githubusercontent.com/carlxdd/Impact/main/ImpactVer
+end)
